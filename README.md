@@ -27,3 +27,10 @@ Run the following commands to approve and deposit the minted NFTs from Ethereum 
 
 npx hardhat run scripts/approveDeposit.js --network goerli
 
+## Authors
+
+HARSH CHAUDHARY
+
+## Disclaimer
+
+Please note that this contract and the associated README file are provided for informational purposes only. Deploying and interacting with smart contracts involves risks, and it is your responsibility to review and understand the code before proceeding. Make sure to exercise caution and perform appropriate testing before deploying any smart contract on a live network.
