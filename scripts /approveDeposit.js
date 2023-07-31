@@ -1,7 +1,7 @@
 //import c from "contracts/examples/erc721-transfer/FxERC721RootTunnel.sol"// Import necessary packages and contracts
 const { ethers } = require("hardhat");
 const { FXRootContractAbi } = require("../artifacts/FXRootContractAbi.js");
-const ABI = require("../artifacts/contracts/cricketer.sol/cricketer.json");
+const ABI = require("../artifacts/contracts/ronaldo.sol/ronaldo.json");
 require("dotenv").config();
 
 //Transfer ERC721A tokens to the Ethereum FxChain network
@@ -19,7 +19,7 @@ async function main() {
   const [signer] = await ethers.getSigners();
 
   // Get ERC721A contract instance
-  const NFT = await ethers.getContractFactory("cricketer");
+  const NFT = await ethers.getContractFactory("ronaldo");
   const nft = await NFT.attach("0x59057972F553f795275bE46bdC27De38EdBd9E1e");
 
   // Get FXRoot contract instance
@@ -53,7 +53,7 @@ async function main() {
 
   // Print the balance of the wallet
   console.log(
-    "IndianNFT wallet balance",
+    "NFT wallet balance",
     wallet.address,
     "is: ",
     balance.toString()
